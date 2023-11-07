@@ -12,6 +12,14 @@ app.use('/', (req, res) => {
     res.render('index')
 })
 
+app.use('/signin', (req, res) => {
+    res.render('signin')
+})
+
+app.use('/resultpage', (req,res) => {
+    res.render('resultpage')
+})
+
 app.listen(2020, () => {
     console.log('server is listening on post 2020...')
 })
