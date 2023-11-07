@@ -8,15 +8,15 @@ app.set("view engine", 'hbs')
 app.set('views', templatePath);
 
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.use('/signin', (req, res) => {
+app.get('/signin', (req, res) => {
     res.render('signin')
 })
 
-app.use('/resultpage', (req,res) => {
+app.get('/resultpage', (req,res) => {
     res.render('resultpage')
 })
 
